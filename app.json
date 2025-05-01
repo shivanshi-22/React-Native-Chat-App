@@ -3,6 +3,7 @@
     "name": "chat-app",
     "slug": "chat-app",
     "version": "1.0.0",
+    "plugins":["@react-native-firebase/app","@react-native-firebase/auth"],
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -16,13 +17,20 @@
       "supportsTablet": true
     },
     "android": {
+      "GoogleServicesFile":"./google-services.json",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.shivi22.chatapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "4eabb7d9-0d20-4334-a650-d61dd2693e24"
+      }
     }
   }
 }

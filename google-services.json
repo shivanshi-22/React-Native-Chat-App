@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "461944438196",
+    "project_id": "chat-app-86bc9",
+    "storage_bucket": "chat-app-86bc9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461944438196:android:d7d91ee6cac30554ffc6e1",
+        "android_client_info": {
+          "package_name": "com.shivi22.chatapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkwDFzHh1xOdoDvE4KKMQWGk4Jrm9r1Q0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
