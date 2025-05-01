@@ -52,41 +52,72 @@ export default function Detail({ route, navigation }) {
           height: "25%",
         }}
       >
-      <Text style={{
-        fontSize:32,
-        fontWeight:"bold",
-        marginBottom: 40,
-        marginTop: 150,
-
-      }}>
-        Enter your details:
-
-      </Text>
-      <TextInput style={{height: 50,
-              width: "100%",
-              borderColor: "black",
-              borderWidth: 1,
-              marginBottom: 30,
-              paddingHorizontal: 10,
-              borderRadius: 10,
-              }}
-              placeholder="Name"
-              value={name}
-              onChangeText={setName}
-              
-              >
-
-      </TextInput>
-      <DatePicker style={{height:80, marginBottom:30, width: Dimensions.get("window").width -40, 
-      }}
-      date={dob}
-      onDateChange={setDob}
-      mode='date'
-
-      
-      >
-
-      </DatePicker>
+        <Text
+          style={{
+            fontSize: 32,
+            fontWeight: "bold",
+            marginBottom: 40,
+            marginTop: 150,
+          }}
+        >
+          Enter your details:
+        </Text>
+        <TextInput
+          style={{
+            height: 50,
+            width: "100%",
+            borderColor: "black",
+            borderWidth: 1,
+            marginBottom: 30,
+            paddingHorizontal: 10,
+            borderRadius: 10,
+          }}
+          placeholder="Name"
+          value={name}
+          onChangeText={setName}
+        ></TextInput>
+        <DatePicker
+          style={{
+            height: 80,
+            marginBottom: 30,
+            width: Dimensions.get("window").width - 40,
+          }}
+          date={dob}
+          onDateChange={setDob}
+          mode="date"
+        ></DatePicker>
+        <Picker
+          style={{
+            height: 50,
+            width: "100%",
+            marginBottom: 30,
+          }}
+          selectedValue={gender}
+          onValueChange={setGender}
+        >
+          <Picker.Item label="Male" value="Male" />
+          <Picker.Item label="Female" value="Female" />
+          <Picker.Item label="Other" value="Other" />
+        </Picker>
+        <TouchableOpacity
+          style={{
+            backgroundColor: "#007BFF",
+            padding: 10,
+            borderRadius: 5,
+            marginBottom: 20,
+            alignItems: "center",
+          }}
+        >
+          <Text
+            style={{
+              color: "white",
+              fontSize: 22,
+              fontWeight: "bold",
+            }}
+          >
+            Save Details
+          </Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
